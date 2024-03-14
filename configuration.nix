@@ -7,10 +7,10 @@ in
   services.tailscale = {
     enable = true;
     authKeyFile = "/tsauthkey";
-    extraUpFlags = [ "--ssh" "--hostname" "flakery-tutorial" ];
+    extraUpFlags = [ "--ssh" "--hostname" "hercules" ];
   };
 
-  
+
   imports = [
     ( builtins.fetchTarball "https://github.com/hercules-ci/hercules-ci-agent/archive/stable.tar.gz"
       + "/module.nix"
